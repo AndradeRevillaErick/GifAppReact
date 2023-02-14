@@ -10,7 +10,7 @@ export const GifExpertApp = () => {
     const onAddCategory = ( newCategory ) => {
         // setCategories(categories.concat('halo'));//una opcion para aumentar el arreglo
         if( categories.includes(newCategory) ) return;
-        setCategories([ ...categories, newCategory ]);//otra opcion para agregar al arreglo
+        setCategories([ newCategory, ...categories ]);//otra opcion para agregar al arreglo
         // setCategories(categories.push('halo'));//no se puede hacer asi
         
         // categories.push( newCategory );
